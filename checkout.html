@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form action="">
+                <h1><i class="fas fa-shipping-fast"></i> Shipping Details</h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" name="f-name">
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" name="l-name">
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Street</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state">
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip">
+                    </div>
+                </div>
+                <h1><i class="far fa-credit-card"></i> Payment Information</h1>
+                <div class="cc-num">
+                    <label for="card-num">Credit Card No.</label>
+                    <input type="text" name="card-num">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Exp</label>
+                        <input type="text" name="expire">
+                    </div>
+                    <div>
+                        <label for="card-num">CCV</label>
+                        <input type="text" name="security">
+                    </div>
+                </div>
+                
+            </form>
+            <div class="btns">
+                <button onclick="showSuccessAlert()">Purchase</button>
+                <a href="shoppingcart.html"><button>Back to cart</button></a>
+            </div>
+        </div>
+        
+    </div>
+   
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: 'Raleway';
+            color: black;
+        }
+
+        
+
+        .wrapper {
+            margin-top: 5%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            font-family: 'Raleway';
+            background-color: white;
+            box-shadow: 9px 13px 30px 0px rgba(0, 0, 0, 0.18);
+           
+        }
+
+        .container {
+            border: 20px;
+            width: 65%;
+            padding: 5% 10%;
+        }
+
+        h1 {
+            align-self: center;
+        }
+
+        form {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        form>* {
+            margin-top: 20px;
+        }
+
+        form input {
+            width: 100%;
+            min-height: 25px;
+            border: 0;
+            font-size: 1rem;
+            letter-spacing: .15rem;
+            font-family: 'Raleway';
+            margin-top: 5px;
+            color: black;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        form label {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        form h1 {
+            font-size: 24px;
+            line-height: 10px;
+            letter-spacing: 1px;
+        }
+
+        form h1:nth-of-type(2) {
+            margin-top: 10%;
+        }
+
+        .name {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+        }
+
+        .name div {
+            width: 45%;
+        }
+
+        .address-info,
+        .cc-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .address-info div,
+        .cc-info div {
+            width: 30%;
+        }
+
+        .cc-info div {
+            width: 45%;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 10px;
+        }
+
+        .btns button {
+            margin: 3px 0;
+            height: 30px;
+            width: 200px;
+            color: white;
+            background-color: black;
+            text-transform: uppercase;
+            border: 0;
+            border-radius: .3rem;
+            letter-spacing: 2px;
+        }
+
+        .btns button:hover {
+           color: black;
+           background-color: white;
+           border: 1px solid black;
+        }
+
+       
+
+        input:focus,
+        button:focus {
+            outline: none;
+        }
+
+        @media (max-width: 736px) {
+            .wrapper,
+            .container {
+                width: 100%;
+            }
+
+            .btns {
+                align-items: center;
+            }
+
+            .btns button {
+                width: 400px;
+            }
+
+            form h1 {
+                text-align: center;
+            }
+
+            .name,
+            .address-info,
+            .cc-info {
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .name div,
+            .address-info div,
+            .cc-info div {
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                display: flex;
+            }
+
+            .street,
+            .cc-num {
+                text-align: center;
+            }
+
+            input {
+                margin: 5px 0;
+                min-height: 30px;
+            }
+        }
+    </style>
+
+    <script>
+        function showSuccessAlert() {
+            alert("Pembelian berhasil!");
+          }
+    </script>
+</body>
+
+</html>

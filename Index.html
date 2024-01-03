@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>Shopology</title>
+    <link rel="icon" href="imgasa/klipartz.com.png" type="image/gif">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="StyleSheet" href="swiss.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="bgimg"
+                    style="background-image: url('imgasa/Group\ 1.jpg'); background-size: cover; background-repeat: no-repeat; height:765px;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="bgimg"
+                    style="background-image: url('imgasa/Group\ 2.jpg'); background-size: cover; background-repeat: no-repeat; height:765px;">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="bgimg"
+                    style="background-image: url('imgasa/Group\ 3.jpg'); background-size: cover; background-repeat: no-repeat; height:765px;">
+                </div>
+            </div>
+
+
+            <!-- pembuka navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: transparent !important;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" id="logoshopology" href="#"><img src="imgasa/shopology.png" width="200px"
+                            alt=""></a>
+
+                    <!-- Adjusted inline style for the hamburger menu button -->
+                    <button id="hamburgermenu" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation" style="margin-right: 10px;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#newarrival">New Arrivals</a></li>
+                                    <li><a class="dropdown-item" href="#allproduk">All Product</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#footer">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Fluid search input span -->
+                    <div class="flex-grow-1">
+                        <span class="navbar-text">
+                            <input class="search__input form-control" type="text" placeholder="Search">
+                        </span>
+                    </div>
+
+                    <div class="navbar-text-container" style="display: flex; align-items: center; gap: 20px;">
+                        <span class="navbar-text" style="margin-left: 10px;">
+                            <a href="shoppingcart.html"><img src="skins/shopping_cart_2838895_1.png" alt=""></a>
+                        </span>
+                        <span class="navbar-text">
+                            <img src="skins/user_8647311_1.png" id="user_8647311_1" />
+                            <span class="mb-2" id="my_account">LOGIN</span>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+            <!-- penutup navbar -->
+
+
+            <!-- pembuka card -->
+            <!-- Card 1 -->
+            <div class="d-flex justify-content-start align-items-center vh-100 me-5 mx-5">
+                <div class="card" style="width: 40rem; background-color: rgba(255, 255, 255, 0.5);">
+                    <div class="card-body">
+                        <h2 class="card-title" id="titlecard">Jackson X Series DK3XRM HSS, Maple FB, Deep Purple
+                            Metallic</h2>
+                        <p class="card-text" id="cardText">The Jackson® X Series Dinky™ DK3XR M HSS provides a superior
+                            performance experience with features and appointments for the price-conscious musician.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- batas card 1 -->
+        </div>
+        <!-- batas card -->
+    </div>
+    </div>
+
+    <!-- pembuka text banner utama -->
+    <script>
+        const texts = [{
+                title: "Ibanez PIA Steve Vai Signature, Stallion White",
+                text: "Steve Vai is a virtuoso guitarist, visionary composer, and consummate producer who sculpts musical sound with infinite creativity and technical mastery."
+            },
+            {
+                title: "Squier Classic Vibe 60s Jazzmaster, Laurel FB, Olympic White",
+                text: "Classic Vibe ‘60s Jazzmaster® adalah penghormatan pada model favorit Fender yang ikonik."
+            },
+            {
+                title: "Jackson X Series DK3XRM HSS, Maple FB, Deep Purple Metallic",
+                text: "The Jackson® X Series Dinky™ DK3XR M HSS provides a superior performance experience with features and appointments for the price-conscious musician."
+            }
+        ];
+
+        function updateContent(index) {
+            const cardText = document.getElementById("cardText");
+            const titlecard = document.getElementById("titlecard");
+            cardText.classList.remove('fade-in');
+            cardText.classList.add('fade-out');
+            titlecard.classList.remove('fade-in');
+            titlecard.classList.add('fade-out');
+
+            setTimeout(() => {
+                document.getElementById("titlecard").textContent = texts[index].title;
+                document.getElementById("cardText").textContent = texts[index].text;
+                cardText.classList.remove('fade-out');
+                cardText.classList.add('fade-in');
+                titlecard.classList.remove('fade-out');
+                titlecard.classList.add('fade-in');
+            }, 1000);
+        }
+
+        function updateCarousel(index) {
+            document.querySelector('.carousel').querySelectorAll('.carousel-item').forEach((item, i) => {
+                i === index ? item.classList.add('active') : item.classList.remove('active');
+            });
+        }
+
+        function updateCardAndCarousel() {
+            const currentIndex = texts.findIndex(text => text.title === document.getElementById("titlecard")
+                .textContent);
+            const nextIndex = (currentIndex + 1) % texts.length;
+
+            updateContent(nextIndex);
+            updateCarousel(nextIndex);
+        }
+
+        setInterval(updateCardAndCarousel, 10000);
+    </script>
+    <!-- penutup text banner utama -->
+
+    <!-- pembuka dari produk banner utama -->
+    <section class="small-banner section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-banner">
+                        <iframe width="450" height="240"
+                            src="https://www.youtube.com/embed/pI4-M2xgrvU?si=ZbTyUxkT8d_DhUAQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="single-banner">
+                        <iframe width="450" height="240"
+                            src="https://www.youtube.com/embed/H2NawuyVafc?si=LwbJuUCQaDoySURm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+                <!-- Single Banner  -->
+                <div class="col-lg-4 col-12">
+                    <div class="single-banner tab-height">
+                        <iframe width="450" height="240"
+                            src="https://www.youtube.com/embed/c5CA8XbZvbs?si=tefG1GzXwbRsXh9-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- /End Single Banner  -->
+            </div>
+        </div>
+    </section>
+    <!-- penutup dari banner utama -->
+
+    <!-- pembuka new arival  owl carousel -->
+    <div id="newarrival" class="product-area most-popular section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h1 class="jwr text-center mt-5 mb-5" style="font-size: 50px; font-weight: bold;">New Arrival</br></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel popular-slider">
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="deskripsiproduk.html">
+                                    <img class="default-img" src="imgproduk/gitar (9).webp" alt="#">
+
+                                    <span class="new">New</span>
+                                </a>
+                                
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="product-details.html">Gretsch G6136T-59GE Vintage Select 1959 Falcon Electric Guitar w/ Bigsby, Vintage White</a></h3>
+                                <div class="product-price">
+                                    <span class="old">$60.00</span>
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="deskripsiproduk.html">
+                                    <img class="default-img" src="imgproduk/gitar (3).webp" alt="#">
+
+                                    <span class="new">New</span>
+                                </a>
+                                
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="deskripsiproduk.html">EVH Star Limited Edition</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="deskripsiproduk.html">
+                                    <img class="default-img" src="imgproduk/gitar (11).webp" alt="#">
+
+                                    <span class="new">New</span>
+                                </a>
+                                
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="deskripsiproduk.html">Fender Custom Shop Limited Edition Twisted Telecaster
+                                        Custom Journeyman Relic, 2-Color Sunburst</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="deskripsiproduk.html">
+                                    <img class="default-img" src="imgproduk/gitar (2).webp" alt="#">
+
+                                    <span class="new">New</span>
+                                </a>
+                                
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="deskripsiproduk.html">Platinum EVH Wolfgang USA Edward Van Halen Signature
+                                        Electric Guitar Ivory | Guitar Center</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="deskripsiproduk.html">
+                                    <img class="default-img" src="imgproduk/gitar (6).webp" alt="#">
+                                    <span class="new">New</span>
+                                </a>
+                                
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="deskripsiproduk.html">Fender Bruno Mars Stratocaster Electric Guitar Mars
+                                        Mocha</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                        <!-- Start Single Product -->
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="deskripsiproduk.html">
+                                    <img class="default-img" src="imgproduk/gitar (7).webp" alt="#">
+                                    <span class="new">New</span>
+                                </a>
+                                
+                            </div>
+                            <div class="product-content">
+                                <h3><a href="deskripsiproduk.html">Fender FSR Player Plus Meteora Electric Guitar,
+                                        Roasted Maple FB, Sapphire Blue Transparent</a></h3>
+                                <div class="product-price">
+                                    <span>$50.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Product -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- penutup new arrival -->
+
+    <!-- pembuka all product -->
+    <div id="allproduk" class="product-area section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h1 class="jwr text-center mt-5 mb-5" style="font-size: 50px; font-weight: bold;">All Product</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="product-info">
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Start Single Tab -->
+                            <div class="tab-pane fade show active" id="man" role="tabpanel">
+                                <div class="tab-single">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (1).jpg" alt="#">
+
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Fender Custom Shop Ltd Ed Custom
+                                                            Jazzmaster Relic Electric Guitar, Aged Black Paisley</a>
+                                                    </h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (10).webp"alt="#"></a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Bumblebee Black/Yellow Striped
+                                                            Series Relic Wolfgang Pup Floyd Rose Fat Bras Electric
+                                                            Guitar</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (11).webp"alt="#"><span class="new">New</span></a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Fender Custom Shop Limited
+                                                            Edition Twisted Telecaster Custom Journeyman Relic, 2-Color
+                                                            Sunburst</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (12).webp"alt="#"></a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Ibanez J Custom JCRG2001-UND
+                                                            Electric Guitar w/Case, Undine</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (13).webp"alt="#"></a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Jackson USA Signature Jeff Loomis
+                                                            Kelly Black</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (2).webp" alt="#"><span class="new">New</span> </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Platinum EVH Wolfgang USA Edward
+                                                            Van Halen Signature Electric Guitar Ivory</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (3).webp" alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">EVH Star Limited Edition</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (4).webp" alt="#">
+
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Ernie Ball Music Man John
+                                                            Petrucci JP15 Electric Guitar, Maple FB, Translucent Black
+                                                            Flame</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (5).webp" alt="#">
+
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Fender Player HSS Stratocaster
+                                                            Electric Guitar, Maple FB, Polar White</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (6).webp" alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Fender Bruno Mars Stratocaster
+                                                            Maple Mars Mocha</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (7).webp" alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Fender FSR Player Plus Meteora
+                                                            Electric Guitar, Roasted Maple FB, Sapphire Blue
+                                                            Transparent</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (8).webp" alt="#">
+
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Heritage Standard Collection
+                                                            H-150 P90 Electric Guitar with Case, Vintage Cherry
+                                                            Sunburst</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (9).webp" alt="#">
+                                                        <span class="new">New</span>
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Gretsch G6136T-59GE Vintage
+                                                            Select 1959 Falcon Electric Guitar w/ Bigsby, Vintage
+                                                            White</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img"
+                                                            src="imgproduk/F03-037-4083-505_1562813679918.webp" alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+
+
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Squier Classic Vibe 60s
+                                                            Jazzmaster, Laurel FB, Olympic White</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img"
+                                                            src="imgproduk/products_2FI01-PIA3761-SLW_2FI01-PIA3761-SLW_1592894436960.webp"
+                                                            alt="#">
+                                                        <span class="out-of-stock">Hot</span>
+
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Ibanez PIA Steve Vai Signature,
+                                                            Stallion White</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$29.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="deskripsiproduk.html">
+                                                        <img class="default-img" src="imgproduk/gitar (2).png" alt="#">
+
+                                                        <span class="out-of-stock">Hot</span>
+                                                    </a>
+                                                    
+                                                </div>
+                                                <div class="product-content">
+                                                    <h3><a href="deskripsiproduk.html">Jackson X Series DK3XRM HSS,
+                                                            Maple FB, Deep Purple Metallic</a></h3>
+                                                    <div class="product-price">
+                                                        <span>$60.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Area -->
+
+    <!-- pembuka footer -->
+    <footer id="footer" class="footer mt-5">
+        <!-- Footer Top -->
+        <div class="footer-top section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer about">
+                            <div class="logo">
+                                <a href="index.html"><img src="imgasa/shopologyputih.png" class="mt-1" width="200px"
+                                        alt="#"></a>
+                            </div>
+                            <p class="text">only selling high-quality products.</p>
+                            <p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+62 3456
+                                        7890</a></span></p>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer social mt-3">
+                            <h4>About Us</h4>
+                            <!-- Single Widget -->
+                            <div class="contact">
+                                <ul>
+                                    <li>NO. 112 - Jalan kenangan.</li>
+                                    <li>Kecamatan Sukamaju.</li>
+                                    <li>Shopology@gmail.com</li>
+                                    <li>+62 3456 7890</li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                            <ul>
+                                <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
+                                
+                                <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top -->
+        <div class="copyright">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="left">
+                                <p>Copyright © 2023 Shopology</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of .container -->
+
+    <!-- penutup footer -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <div id="overlay" style="position: absolute; z-index: 10;">
+        <div id="login-box">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label id="forusername" for="username">Username</label>
+                <input maxlength="10" type="text" id="username" required>
+                <br>
+                <label id="forusername" for="password">Password</label>
+                <input type="password" id="password" required>
+                <br>
+                <button type="button" id="login-button">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var specialChars = document.querySelectorAll("span.char");
+        for (var c = 0; c < script specialChars.length; c++) {
+            specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML);
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const myAccountDiv = document.getElementById('my_account');
+            const overlay = document.getElementById('overlay');
+            const loginBox = document.getElementById('login-box');
+            const loginButton = document.getElementById('login-button');
+
+            myAccountDiv.addEventListener('click', function () {
+                overlay.style.display = 'flex';
+            });
+
+            document.addEventListener('click', function (event) {
+                if (event.target === overlay) {
+                    overlay.style.display = 'none';
+                }
+            });
+
+            loginButton.addEventListener('click', function () {
+                const username = document.getElementById('username').value;
+                myAccountDiv.textContent = username;
+                overlay.style.display = 'none';
+            });
+        });
+
+        $(document).ready(function () {
+            // Ambil tinggi gambar setelah gambar selesai dimuat
+            var imgHeight = $('.custom-rectangle img').height();
+
+            // Set tinggi card sesuai dengan tinggi gambar
+            $('.custom-rectangle').css('height', imgHeight + 'px');
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var link = document.getElementById("tagA");
+            link.addEventListener("click", function () {
+                showAlert();
+            });
+        });
+
+        function showSuccessAlert() {
+            alert("Pembelian berhasil!");
+          }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div id="overlay">
+        <div id="login-box">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label id="forusername" for="username">Username</label>
+                <input maxlength="10" type="text" id="username" required>
+                <br>
+                <label id="forusername" for="password">Password</label>
+                <input type="password" id="password" required>
+                <br>
+                <button type="button" id="login-button">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <style>
+        #forusername {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        #login-box {
+            top: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        #login-button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #username {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #password {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+
+
+        #my_account {
+            cursor: pointer;
+
+        }
+
+        .search__container {
+            width: 280px;
+            margin-top: -65px;
+            margin-left: 20px;
+            padding-top: 64px;
+        }
+
+        @media screen and (max-width: 990px) {
+            .search__container {
+                width: 280px;
+                margin-top: -65px;
+                margin-left: -5px;
+                padding-top: 64px;
+            }
+        }
+
+        a {
+            text-decoration: none !important;
+
+        }
+
+        .search__title {
+            font-size: 22px;
+            font-weight: 900;
+            text-align: center;
+            color: #ff8b88;
+        }
+
+        .search__input {
+            width: 100%;
+            padding: 12px 24px;
+            background-color: transparent;
+            transition: transform 250ms ease-in-out, all 250ms ease-in-out;
+            /* Combine transition properties */
+            font-size: 14px;
+            line-height: 18px;
+            color: #575756;
+            background-image: url(cari.png);
+            background-repeat: no-repeat;
+            background-size: 18px 18px;
+            background-position: 95% center;
+            border-radius: 50px;
+            border: 1px solid #575756;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+
+        .search__input::placeholder {
+            color: rgba(87, 87, 86, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .search__input:hover,
+        .search__input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #575756;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+    </style>
+    <script>
+        var specialChars = document.querySelectorAll("span.char");
+        for (var c = 0; c < specialChars.length; c++) {
+            specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML);
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const myAccountDiv = document.getElementById('my_account');
+            const overlay = document.getElementById('overlay');
+            const loginBox = document.getElementById('login-box');
+            const loginButton = document.getElementById('login-button');
+
+            myAccountDiv.addEventListener('click', function () {
+                overlay.style.display = 'flex';
+            });
+
+            document.addEventListener('click', function (event) {
+                if (event.target === overlay) {
+                    overlay.style.display = 'none';
+                }
+            });
+
+            loginButton.addEventListener('click', function () {
+                const username = document.getElementById('username').value;
+                myAccountDiv.textContent = username;
+                overlay.style.display = 'none';
+            });
+        });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slicknav.min.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/active.js"></script>
+</body>
+
+</html>

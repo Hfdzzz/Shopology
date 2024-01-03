@@ -1,0 +1,217 @@
+  .card {
+            
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+#displayproduk .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+#displayproduk .card:hover {
+    transform: scale(1.05);
+}
+
+#displayproduk .card:hover img {
+    /* filter: brightness(70%); */
+}
+
+#displayproduk .card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: slateblue; */
+    z-index: 1;
+}
+
+#displayproduk .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+#displayproduk .card-text {
+
+}
+
+#displayproduk strong {
+   
+    display: block;
+    margin-top: 10px;
+}
+
+#displayproduk a {
+    /* color: #333; */
+}
+
+#displayproduk a:hover {
+    text-decoration: none;
+}
+
+.carousel-item {
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .fade-out {
+    animation: fadeOut 1s ease-out;
+    
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+
+  .carousel-item.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .carousel-item-next, .carousel-item-prev, .carousel-item-right, .carousel-item-left {
+    opacity: 0;
+  }
+
+  .carousel-item-next, .carousel-item-left {
+    transform: translateX(100%);
+  }
+
+  .carousel-item-prev, .carousel-item-right {
+    transform: translateX(-100%);
+  }
+
+  .carousel-inner {
+    overflow: hidden;
+  }
+
+body {
+    font-family: 'Roboto';
+}
+
+.card {
+    border: none;
+}
+
+.search__container {
+    width: 280px;
+    margin-top: -65px;
+    margin-left: 20px;
+    padding-top: 64px;
+}
+
+@media screen and (max-width: 990px) {
+    .search__container {
+        width: 280px;
+        margin-top: -65px;
+        margin-left: -5px;
+        padding-top: 64px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .search__container {
+        width: 280px;
+        margin-top: -65px;
+        margin-left: -5px;
+        padding-top: 64px;
+    }
+
+    #logoshopology {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #banner {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'SuperBrigadeItalic-L3p43';
+    src: url('font/SuperBrigadeItalic-L3p43.otf') format('opentype'); /* Ubah 'opentyefont' menjadi 'opentype' */
+}
+
+@font-face{
+    font-family: 'StarJediHollow-A4lL';
+    src: url('font/StarJediOutline-y0xm.ttf') format('truetype');
+
+}
+
+#titlecard {
+    font-family: 'StarJediHollow-A4lL','SuperBrigadeItalic-L3p43' ;
+    -webkit-text-stroke: 0.5px white;
+    
+}
+
+#cardText {
+    /* -webkit-text-stroke: px white; */
+    /* font-size: 15px; */
+    
+}
+
+.single-product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan saat dihover */
+    transform: translateY(-10px); /* Efek sedikit naik saat dihover */
+}
+
+
+
+.single-product .product-content h3 a:hover {
+    color: #007bff; /* Mengganti warna teks saat dihover */
+}
+
+@media screen and (max-width: 1200px) {
+    #bgimg {
+        background-position: -60px 0px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #bgimg {
+        background-position: -200px 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #bgimg {
+        background-position: -300px 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #bgimg {
+        background-position: -410px 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #bgimg {
+        background-position: -495px 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #bgimg {
+        background-position: -590px 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #bgimg {
+        background-position: -620px 0px;
+    }
+}
+
